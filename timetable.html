@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fitness</title>
   <link rel="stylesheet" href="./css/style.min.css">
+  <link rel="preload" href="./fonts/robotocondensedregular.woff2" as="font" type="font/woff2" crossorigin="">
 </head>
 
 <body>
@@ -24,44 +25,45 @@
         <td class="timetable__item timetable__item--7">Воскресенье</td>
       </tr>
       <tr class="timetable__workout-list">
-        <td class="timetable__workout-item timetable__workout-item--time">08:00</td>
-        <td class="timetable__workout-item">CrossFit</td>
-        <td class="timetable__workout-item">Aerostretching</td>
-        <td class="timetable__workout-item">Hot Iron</td>
-        <td class="timetable__workout-item">Pilates</td>
-        <td class="timetable__workout-item timetable__workout-item--5">Stretching</td>
-        <td class="timetable__workout-item timetable__workout-item--6">Functional</td>
-        <td class="timetable__workout-item timetable__workout-item--7">Body Sculpt</td>
+        <td class="timetable__workout-time timetable__workout-time--hide">08:00</td>
+        <td class="timetable__workout-item timetable__workout-item--hide" data-column="1" data-row="1">CrossFit</td>
+        <td class="timetable__workout-item timetable__workout-item--hide" data-column="2" data-row="1">Aerostretching</td>
+        <td class="timetable__workout-item timetable__workout-item--hide" data-column="3" data-row="1">Hot Iron</td>
+        <td class="timetable__workout-item timetable__workout-item--hide" data-column="4" data-row="1">Pilates</td>
+        <td class="timetable__workout-item timetable__workout-item--hide timetable__workout-item--5" data-column="5" data-row="1">Stretching</td>
+        <td class="timetable__workout-item timetable__workout-item--hide timetable__workout-item--6" data-column="6" data-row="1">Functional</td>
+        <td class="timetable__workout-item timetable__workout-item--hide timetable__workout-item--7" data-column="7" data-row="1">Body Sculpt</td>
       </tr>
       <tr class="timetable__workout-list">
-        <td class="timetable__workout-item timetable__workout-item--time">12:00</td>
-        <td class="timetable__workout-item">Body Sculpt</td>
-        <td class="timetable__workout-item">CrossFit</td>
-        <td class="timetable__workout-item">Aerostretching</td>
-        <td class="timetable__workout-item">Hot Iron</td>
-        <td class="timetable__workout-item timetable__workout-item--5">Pilates</td>
-        <td class="timetable__workout-item timetable__workout-item--6">Stretching</td>
-        <td class="timetable__workout-item timetable__workout-item--7">Functional</td>
+        <td class="timetable__workout-time timetable__workout-time--hide">12:00</td>
+        <td class="timetable__workout-item timetable__workout-item--hide" data-column="1" data-row="2">Body Sculpt</td>
+        <td class="timetable__workout-item timetable__workout-item--hide" data-column="2" data-row="2">CrossFit</td>
+        <td class="timetable__workout-item timetable__workout-item--hide" data-column="3" data-row="2">Aerostretching</td>
+        <td class="timetable__workout-item timetable__workout-item--hide" data-column="4" data-row="2">Hot Iron</td>
+        <td class="timetable__workout-item timetable__workout-item--hide timetable__workout-item--5" data-column="5" data-row="2">Pilates</td>
+        <td class="timetable__workout-item timetable__workout-item--hide timetable__workout-item--6" data-column="6" data-row="2">Stretching</td>
+        <td class="timetable__workout-item timetable__workout-item--hide timetable__workout-item--7" data-column="7" data-row="2">Functional</td>
       </tr>
       <tr class="timetable__workout-list">
-        <td class="timetable__workout-item timetable__workout-item--time">18:00</td>
-        <td class="timetable__workout-item">Functional</td>
-        <td class="timetable__workout-item">Body Sculpt</td>
-        <td class="timetable__workout-item">CrossFit</td>
-        <td class="timetable__workout-item">Aerostretching</td>
-        <td class="timetable__workout-item timetable__workout-item--5">Hot Iron</td>
-        <td class="timetable__workout-item timetable__workout-item--6">Pilates</td>
-        <td class="timetable__workout-item timetable__workout-item--7">Stretching</td>
+        <td class="timetable__workout-time timetable__workout-time--hide">18:00</td>
+        <td class="timetable__workout-item timetable__workout-item--hide" data-column="1" data-row="3">Functional</td>
+        <td class="timetable__workout-item timetable__workout-item--hide" data-column="2" data-row="3">Body Sculpt</td>
+        <td class="timetable__workout-item timetable__workout-item--hide" data-column="3" data-row="3">CrossFit</td>
+        <td class="timetable__workout-item timetable__workout-item--hide" data-column="4" data-row="3">Aerostretching</td>
+        <td class="timetable__workout-item timetable__workout-item--hide timetable__workout-item--5" data-column="5" data-row="3">Hot Iron</td>
+        <td class="timetable__workout-item timetable__workout-item--hide timetable__workout-item--6" data-column="6" data-row="3">Pilates</td>
+        <td class="timetable__workout-item timetable__workout-item--hide timetable__workout-item--7" data-column="7" data-row="3">Stretching</td>
       </tr>
       <tr class="timetable__workout-list">
-        <td class="timetable__workout-item timetable__workout-item--time">20:00</td>
-        <td class="timetable__workout-item">Stretching</td>
-        <td class="timetable__workout-item">Functional</td>
-        <td class="timetable__workout-item">Body Sculpt</td>
-        <td class="timetable__workout-item">CrossFit</td>
-        <td class="timetable__workout-item timetable__workout-item--5">Aerostretching</td>
-        <td class="timetable__workout-item timetable__workout-item--6">Hot Iron</td>
-        <td class="timetable__workout-item timetable__workout-item--7">Pilates</td>
+        <td class="timetable__workout-time
+">20:00</td>
+        <td class="timetable__workout-item timetable__workout-item--hide" data-column="1" data-row="4">Stretching</td>
+        <td class="timetable__workout-item timetable__workout-item--hide" data-column="2" data-row="4">Functional</td>
+        <td class="timetable__workout-item timetable__workout-item--hide" data-column="3" data-row="4">Body Sculpt</td>
+        <td class="timetable__workout-item timetable__workout-item--hide" data-column="4" data-row="4">CrossFit</td>
+        <td class="timetable__workout-item timetable__workout-item--hide timetable__workout-item--5" data-column="5" data-row="4">Aerostretching</td>
+        <td class="timetable__workout-item timetable__workout-item--hide timetable__workout-item--6" data-column="6" data-row="4">Hot Iron</td>
+        <td class="timetable__workout-item timetable__workout-item--hide timetable__workout-item--7" data-column="7" data-row="4">Pilates</td>
       </tr>
       </tbody>
     </table>
@@ -74,37 +76,85 @@
         <td class="timetable__item">Воскресенье</td>
       </tr>
       <tr class="timetable__workout-list">
-        <td class="timetable__workout-item timetable__workout-item--time">08:00</td>
-        <td class="timetable__workout-item">CrossFit</td>
-        <td class="timetable__workout-item">Aerostretching</td>
-        <td class="timetable__workout-item">Hot Iron</td>
-        <td class="timetable__workout-item">Pilates</td>
+        <td class="timetable__workout-time timetable__workout-time--hide">08:00</td>
+        <td class="timetable__workout-item timetable__workout-item--hide" data-column="1" data-row="1">CrossFit</td>
+        <td class="timetable__workout-item timetable__workout-item--hide" data-column="2" data-row="1">Aerostretching</td>
+        <td class="timetable__workout-item timetable__workout-item--hide" data-column="3" data-row="1">Hot Iron</td>
+        <td class="timetable__workout-item timetable__workout-item--hide" data-column="4" data-row="1">Pilates</td>
       </tr>
       <tr class="timetable__workout-list">
-        <td class="timetable__workout-item timetable__workout-item--time">12:00</td>
-        <td class="timetable__workout-item">Body Sculpt</td>
-        <td class="timetable__workout-item">CrossFit</td>
-        <td class="timetable__workout-item">Aerostretching</td>
-        <td class="timetable__workout-item">Hot Iron</td>
+        <td class="timetable__workout-time timetable__workout-time--hide">12:00</td>
+        <td class="timetable__workout-item timetable__workout-item--hide" data-column="1" data-row="2">Body Sculpt</td>
+        <td class="timetable__workout-item timetable__workout-item--hide" data-column="2" data-row="2">CrossFit</td>
+        <td class="timetable__workout-item timetable__workout-item--hide" data-column="3" data-row="2">Aerostretching</td>
+        <td class="timetable__workout-item timetable__workout-item--hide" data-column="4" data-row="2">Hot Iron</td>
       </tr>
       <tr class="timetable__workout-list">
-        <td class="timetable__workout-item timetable__workout-item--time">18:00</td>
-        <td class="timetable__workout-item">Functional</td>
-        <td class="timetable__workout-item">Body Sculpt</td>
-        <td class="timetable__workout-item">CrossFit</td>
-        <td class="timetable__workout-item">Aerostretching</td>
+        <td class="timetable__workout-time timetable__workout-time--hide">18:00</td>
+        <td class="timetable__workout-item timetable__workout-item--hide" data-column="1" data-row="3">Functional</td>
+        <td class="timetable__workout-item timetable__workout-item--hide" data-column="2" data-row="3">Body Sculpt</td>
+        <td class="timetable__workout-item timetable__workout-item--hide" data-column="3" data-row="3">CrossFit</td>
+        <td class="timetable__workout-item timetable__workout-item--hide" data-column="4" data-row="3">Aerostretching</td>
       </tr>
       <tr class="timetable__workout-list">
-        <td class="timetable__workout-item timetable__workout-item--time">20:00</td>
-        <td class="timetable__workout-item">Stretching</td>
-        <td class="timetable__workout-item">Functional</td>
-        <td class="timetable__workout-item">Body Sculpt</td>
-        <td class="timetable__workout-item">CrossFit</td>
+        <td class="timetable__workout-time timetable__workout-time--hide">20:00</td>
+        <td class="timetable__workout-item timetable__workout-item--hide" data-column="1" data-row="4">Stretching</td>
+        <td class="timetable__workout-item timetable__workout-item--hide" data-column="2" data-row="4">Functional</td>
+        <td class="timetable__workout-item timetable__workout-item--hide" data-column="3" data-row="4">Body Sculpt</td>
+        <td class="timetable__workout-item timetable__workout-item--hide" data-column="4" data-row="4">CrossFit</td>
       </tr>
       </tbody>
     </table>
+    <div class="timetable__select-wrap">
+      <select>
+        <option value="0">Понедельник</option>
+        <option value="1">Вторник</option>
+        <option value="2">Среда</option>
+        <option value="3">Четверг</option>
+        <option value="4">Пятница</option>
+        <option value="5">Суббота</option>
+        <option value="6">Воскресенье</option>
+      </select>
+      <div class="timetable__select-custom">
+        <div class="timetable__current-option">
+          <span data-index="0">Понедельник</span>
+          <div class="timetable__img"></div>
+        </div>
+        <ul class="timetable__custom-option">
+          <li data-value="0">Понедельник</li>
+          <li data-value="1">Вторник</li>
+          <li data-value="2">Среда</li>
+          <li data-value="3">Четверг</li>
+          <li data-value="4">Пятница</li>
+          <li data-value="5">Суббота</li>
+          <li data-value="6">Воскресенье</li>
+        </ul>
+      </div>
+      <table class="timetable__workout-wrap timetable__workout-wrap--third">
+        <tbody>
+        <tr class="timetable__workout-list">
+          <td class="timetable__workout-time timetable__workout-time--hide">08:00</td>
+          <td class="timetable__workout-item timetable__workout-item--hide" data-column="1" data-row="0" data-value="1">CrossFit</td>
+        </tr>
+        <tr class="timetable__workout-list">
+          <td class="timetable__workout-time timetable__workout-time--hide">12:00</td>
+          <td class="timetable__workout-item timetable__workout-item--hide" data-column="1" data-row="1" data-value="2">Body Sculpt</td>
+        </tr>
+        <tr class="timetable__workout-list">
+          <td class="timetable__workout-time timetable__workout-time--hide">18:00</td>
+          <td class="timetable__workout-item timetable__workout-item--hide" data-column="1" data-row="2" data-value="3">Functional</td>
+        </tr>
+        <tr class="timetable__workout-list">
+          <td class="timetable__workout-time timetable__workout-time--hide">20:00</td>
+          <td class="timetable__workout-item timetable__workout-item--hide" data-column="1" data-row="3" data-value="4">Stretching</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
 </main>
+<script src="js/vendor.js"></script>
+<script src="js/main.js"></script>
 </body>
 
 </html>
