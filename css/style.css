@@ -224,22 +224,22 @@ img {
 
 @font-face {
   font-family: "Roboto Condensed";
-  src: url("fonts/robotocondensedlight.woff2") format("woff2"), url("fonts/robotocondensedlight.woff") format("woff");
+  src: url("../fonts/robotocondensedlight.woff2") format("woff2"), url("../fonts/robotocondensedlight.woff") format("woff");
   font-weight: 300; }
 
 @font-face {
   font-family: "Bebas Neue";
-  src: url("fonts/bebasneueregular.woff2") format("woff2"), url("fonts/bebasneueregular.woff") format("woff");
+  src: url("../fonts/bebasneueregular.woff2") format("woff2"), url("../fonts/bebasneueregular.woff") format("woff");
   font-weight: 400; }
 
 @font-face {
   font-family: "Roboto Condensed";
-  src: url("fonts/robotocondensedregular.woff2") format("woff2"), url("fonts/robotocondensedregular.woff") format("woff");
+  src: url("../fonts/robotocondensedregular.woff2") format("woff2"), url("../fonts/robotocondensedregular.woff") format("woff");
   font-weight: 400; }
 
 @font-face {
   font-family: "Bebas Neue";
-  src: url("fonts/bebasneuebold.woff2") format("woff2"), url("fonts/bebasneuebold.woff") format("woff");
+  src: url("../fonts/bebasneuebold.woff2") format("woff2"), url("../fonts/bebasneuebold.woff") format("woff");
   font-weight: 700; }
 
 .button {
@@ -940,6 +940,7 @@ select {
 .gym__image-wrap {
   position: relative;
   width: 57%;
+  height: 401px;
   background-image: url("../img/gym-desktop@1x.jpg");
   background-repeat: no-repeat;
   background-size: 660px 401px;
@@ -1176,12 +1177,6 @@ select {
        border-image: linear-gradient(to bottom, #d10a42, #0041ca);
     border-image-slice: 1; }
 
-.gym-membership__item-card--active {
-  -o-border-image: linear-gradient(to bottom, #d10a42, #0041ca);
-     border-image: -webkit-gradient(linear, left top, left bottom, from(#d10a42), to(#0041ca));
-     border-image: linear-gradient(to bottom, #d10a42, #0041ca);
-  border-image-slice: 1; }
-
 .gym-membership__heading {
   margin: 0 0 13px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -1223,10 +1218,12 @@ select {
 .gym-membership__item {
   height: 48px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
-  border: none;
+  border: 2px solid transparent;
   background: none;
   color: rgba(16, 38, 84, 0.5);
   cursor: pointer; }
+  .gym-membership__item:hover {
+    border-color: #d10a42; }
 
 .gym-membership__item--active {
   border-bottom: 2px solid #d10a42;
