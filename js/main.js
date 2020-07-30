@@ -46,7 +46,8 @@ $(document).ready(function () {
     slidesToScroll: 1,
     speed: 800,
     draggable: false,
-    infinite: true
+    infinite: true,
+    adaptiveHeight: true
   });
 
   $(`.timetable__current-option`).on(`click`, function () {
@@ -93,11 +94,11 @@ $(document).ready(function () {
         .find(`tr:nth-child(${row + 1})`)
         .find(`.timetable__workout-time`)
         .css(`background-color`, `rgba(237, 2, 51, 1)`).css(`color`, `white`).css(`border`, `none`);
-      $(`.timetable__select-custom`)
+    $(`.timetable__select-custom`)
         .find(`.timetable__custom-option`)
         .find(`li:nth-child(${value})`)
         .css(`background-color`, `rgba(237, 2, 51, 1)`).css(`color`, `white`).css(`border`, `none`);
-      $(`.timetable__current-option`)
+    $(`.timetable__current-option`)
         .find(`span`, `${index}`)
         .css(`background-color`, `rgba(237, 2, 51, 1)`).css(`color`, `white`).css(`border`, `none`);
   },
@@ -116,11 +117,11 @@ $(document).ready(function () {
         .find(`.timetable__workout-time`)
         .css(`background-color`, ``).css(`color`, ``).css(`border`, ``);
     $(`.timetable__select-custom`)
-      .find(`.timetable__custom-option`)
-      .find(`li:nth-child(${value})`)
-      .css(`background-color`, ``).css(`color`, ``).css(`border`, ``);
+        .find(`.timetable__custom-option`)
+        .find(`li:nth-child(${value})`)
+        .css(`background-color`, ``).css(`color`, ``).css(`border`, ``);
     $(`.timetable__current-option`)
-      .find(`span`, `${index}`)
-      .css(`background-color`, ``).css(`color`, ``).css(`border`, ``);
+        .find(`span`, `${index}`)
+        .css(`background-color`, ``).css(`color`, ``).css(`border`, ``);
   });
 });

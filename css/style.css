@@ -1141,6 +1141,8 @@ select {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 1160px;
   margin: 0 auto;
   padding: 0;
@@ -1160,14 +1162,10 @@ select {
           transform: translateX(0); }
 
 .gym-membership__item-card {
-  position: relative;
-  padding: 57px 67px 60px;
   width: 31%;
+  padding: 57px 67px 60px;
+  margin-bottom: 36px;
   text-align: center;
-  background-image: url("../img/rub-desktop.png");
-  background-repeat: no-repeat;
-  background-size: 30px 42px;
-  background-position: 225px 205px;
   background-color: white;
   border: 7px solid transparent;
   cursor: pointer; }
@@ -1185,18 +1183,17 @@ select {
 
 .gym-membership__description {
   width: 100%;
-  margin-bottom: 97px;
+  margin-bottom: 80px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 16px;
   text-align: center; }
 
 .gym-membership__price-bg {
   position: absolute;
-  left: 0;
-  right: 0;
-  top: 45%;
-  display: inline-block;
-  z-index: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 100px;
@@ -1204,12 +1201,23 @@ select {
   opacity: 0.5; }
 
 .gym-membership__price {
-  display: block;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60px;
   font-size: 60px;
-  margin-bottom: 67px;
+  margin-bottom: 48px;
   padding-left: 17px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
+  background-image: url("../img/rub-desktop.png");
+  background-repeat: no-repeat;
+  background-size: 30px 42px;
+  background-position: 158px 8px;
   letter-spacing: 2px;
   text-align: left;
   color: #103aae;
