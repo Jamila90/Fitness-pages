@@ -1315,23 +1315,26 @@ select {
   .gym-membership__item-card {
     width: 100%;
     padding: 42px 33px 49px;
-    margin: 0 auto 39px;
-    background-image: url("../img/rub-mobile.png");
-    background-repeat: no-repeat;
-    background-size: 24px 33px;
-    background-position: 180px 170px; }
+    margin: 0 auto 35px; }
   .gym-membership__heading {
     margin: 0 0 7px;
     font-size: 22px; }
   .gym-membership__description {
-    margin-bottom: 76px; }
+    margin: 0 0 63px; }
   .gym-membership__price-bg {
-    font-size: 80px;
-    top: 41%; }
+    left: 0;
+    right: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 80px; }
   .gym-membership__price {
-    padding-right: 30px;
-    padding-left: 0;
-    margin-bottom: 54px;
+    padding-left: 40px;
+    margin-bottom: 36px;
+    background-image: url("../img/rub-mobile.png");
+    background-repeat: no-repeat;
+    background-size: 24px 33px;
+    background-position: 148px 15px;
     font-size: 48px;
     text-align: center; } }
 
