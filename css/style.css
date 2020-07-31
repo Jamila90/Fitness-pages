@@ -1941,9 +1941,7 @@ select {
   font-family: "Roboto Condensed", "Arial", sans-serif; }
 
 .our-advantages__num {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: block;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
