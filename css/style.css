@@ -820,6 +820,7 @@ select {
   border-left: none;
   border-right: none;
   border-bottom: 1px solid white;
+  border-radius: 0;
   background-color: #102654;
   color: white; }
   .form__item input:hover {
