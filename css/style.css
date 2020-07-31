@@ -897,6 +897,7 @@ select {
   .form__inner-wrap {
     width: 290px; }
   .form__inner-wrap h2 {
+    margin: 0 0 21px;
     font-size: 32px;
     letter-spacing: 1px;
     white-space: nowrap; }
@@ -1611,7 +1612,7 @@ select {
 
 @media only screen and (max-width: 1199px) {
   .nav {
-    width: 79%; }
+    width: 80%; }
   .nav__item {
     padding-left: 14px;
     padding-right: 20px; }
@@ -1790,7 +1791,7 @@ select {
 @media only screen and (max-width: 1199px) {
   .offer__wrapper {
     max-width: 678px;
-    padding: 108px 0 100px; }
+    padding: 104px 0 100px; }
   .offer__heading {
     margin: 0 0 50px;
     font-size: 42px; }
@@ -1806,7 +1807,7 @@ select {
     margin-right: 0;
     margin-bottom: 29px; }
   .offer__price-text {
-    width: 65%;
+    width: 62%;
     padding: 44px 39px 42px 40px; }
   .offer__sale-list {
     -webkit-box-orient: horizontal;
@@ -1908,9 +1909,9 @@ select {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 35%;
+  width: 36%;
   margin-bottom: 80px;
-  padding: 0 0 75px 25px;
+  padding: 0 0 74px 28px;
   border-bottom: 1px solid rgba(209, 10, 66, 0.2); }
   .our-advantages__item:not(:nth-last-child(n+3)) {
     border-bottom: none;
@@ -1924,13 +1925,7 @@ select {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-right: 28px;
-  padding-top: 16px;
-  background: -webkit-gradient(linear, left top, right top, from(#d10a42), to(#0041ca));
-  background: linear-gradient(to right, #d10a42, #0041ca);
-  -webkit-background-clip: text;
-  /*stylelint-disable-line*/
-  -webkit-text-fill-color: transparent; }
+  margin-right: 32px; }
 
 .our-advantages__descr-wrap {
   width: 68%; }
@@ -1946,13 +1941,27 @@ select {
   font-family: "Roboto Condensed", "Arial", sans-serif; }
 
 .our-advantages__num {
-  margin-bottom: 17px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 55px;
   font-size: 71px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-weight: 700; }
+  font-weight: 700;
+  background: -webkit-gradient(linear, left top, right top, from(#d10a42), to(#0041ca));
+  background: linear-gradient(to right, #d10a42, #0041ca);
+  -webkit-background-clip: text;
+  /*stylelint-disable-line*/
+  -webkit-text-fill-color: transparent;
+  color: #0041ca; }
 
 .our-advantages__num--100 {
-  margin-bottom: 36px;
+  margin-bottom: 20px;
+  -webkit-text-fill-color: white;
+  /*stylelint-disable-line*/
   color: white; }
 
 .our-advantages__units,
@@ -1960,7 +1969,12 @@ select {
 .our-advantages__places,
 .our-advantages__years {
   font-size: 14px;
-  font-family: "Roboto Condensed", "Arial", sans-serif; }
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  background: -webkit-gradient(linear, left top, right top, from(#d10a42), to(#0041ca));
+  background: linear-gradient(to right, #d10a42, #0041ca);
+  -webkit-background-clip: text;
+  /*stylelint-disable-line*/
+  -webkit-text-fill-color: transparent; }
 
 .our-advantages__item--exercise-machines {
   position: absolute;
@@ -1977,7 +1991,7 @@ select {
       -ms-flex-align: center;
           align-items: center;
   width: 20%;
-  padding: 73px 0 58px;
+  padding: 62px 0 58px;
   background-color: #1c3374; }
 
 .our-advantages__item--exercise-machines h3 {
@@ -2005,17 +2019,16 @@ select {
   .our-advantages__list {
     padding: 0; }
   .our-advantages__item {
-    width: 47%;
-    margin-bottom: 325px;
+    width: 48%;
+    margin-bottom: 322px;
     padding: 0;
     border-bottom: none; }
     .our-advantages__item:not(:nth-last-child(n+3)) {
       margin-bottom: 95px; }
   .our-advantages__num {
-    margin-bottom: 8px;
     font-size: 58px; }
   .our-advantages__num--100 {
-    margin-bottom: 30px;
+    margin-bottom: 14px;
     font-size: 74px; }
   .our-advantages__descr-wrap {
     width: 100%; }
@@ -2027,7 +2040,7 @@ select {
     left: 17%;
     top: 20%;
     width: 65%;
-    padding: 58px 0 32px;
+    padding: 45px 0 37px;
     margin-bottom: 0; }
   .our-advantages__item--exercise-machines h3 {
     margin-bottom: 19px;
@@ -2038,8 +2051,9 @@ select {
 @media only screen and (max-width: 767px) {
   .our-advantages__wrap {
     max-width: 320px;
-    padding: 75px 0 23px; }
+    padding: 75px 0 45px; }
   .our-advantages__heading {
+    margin: 0 0 40px;
     font-size: 32px;
     letter-spacing: 1px; }
   .our-advantages__list {
@@ -2061,12 +2075,12 @@ select {
     width: 100%;
     margin-bottom: 45px; }
     .our-advantages__item:first-child {
-      margin-bottom: 40px; }
+      margin-bottom: 22px; }
     .our-advantages__item:not(:nth-last-child(n+3)) {
-      margin-bottom: 40px; }
+      margin-bottom: 21px; }
   .our-advantages__num-wrap {
     margin-right: 0;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     padding-top: 12px;
     text-align: center; }
   .our-advantages__descr-wrap--one p {
@@ -2080,14 +2094,14 @@ select {
     left: 0;
     top: 27%;
     width: 100%;
-    margin-bottom: 48px;
-    padding: 62px 0 42px; }
+    margin-bottom: 31px;
+    padding: 44px 0 42px; }
   .our-advantages__item--exercise-machines h3 {
     margin-bottom: 15px; }
   .our-advantages__item--exercise-machines p {
     width: 58%; }
   .our-advantages__num--100 {
-    margin-bottom: 24px; } }
+    margin-bottom: 8px; } }
 
 .promo__wrapper {
   display: -webkit-box;
@@ -2312,16 +2326,16 @@ select {
 
 @media only screen and (max-width: 1199px) {
   .social {
-    width: 102px;
+    width: 100px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
   .social__item {
-    padding-right: 0; } }
+    padding-right: 20px; } }
 
 @media only screen and (max-width: 767px) {
   .social {
-    width: 143px; }
+    width: 165px; }
   .social__icon {
     width: 32px; } }
 
