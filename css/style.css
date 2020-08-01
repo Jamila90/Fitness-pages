@@ -2464,6 +2464,7 @@ select {
 /* Ограничивающая оболочка */
 .slick-list {
   width: 1160px;
+  height: auto;
   overflow: hidden; }
 
 /* Лента слайдов */
@@ -2516,6 +2517,9 @@ select {
   /* stylelint-disable-line */
   height: 294px !important;
   /* stylelint-disable-line */ }
+
+.customer-reviews__wrap .slick-list {
+  background-color: #1c3374; }
 
 .customer-reviews__wrap .slick-slide {
   width: 566px !important;

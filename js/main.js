@@ -46,8 +46,7 @@ $(document).ready(function () {
     slidesToScroll: 1,
     speed: 800,
     draggable: false,
-    infinite: true,
-    adaptiveHeight: true
+    infinite: true
   });
 
   $(`.timetable__current-option`).on(`click`, function () {
