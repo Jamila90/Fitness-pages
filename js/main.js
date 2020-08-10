@@ -87,14 +87,14 @@ $(document).ready(function () {
     const index = $(evt.target).data(`index`);
     $(`.timetable__workout-item-wrap`)
         .find(`.timetable__workout-list-wrap`)
-        .find(`ul>li:nth-child(${column})`)
+        .find(`ul>li:eq(` + (column - 1) + `)`)
         .css(`background-color`, `rgba(237, 2, 51, 1)`).css(`color`, `white`).css(`border`, `none`);
-    $(`.timetable__workout-item-wrap`)
-        .find(`ul>li:nth-child(${row})`)
+    $(`.timetable__workout-time-wrap`)
+        .find(`li:eq(` + (row - 1) + `)`)
         .css(`background-color`, `rgba(237, 2, 51, 1)`).css(`color`, `white`).css(`border`, `none`);
     $(`.timetable__select-custom`)
         .find(`.timetable__custom-option`)
-        .find(`li:nth-child(${value})`)
+        .find(`li ${value}`)
         .css(`background-color`, `rgba(237, 2, 51, 1)`).css(`color`, `white`).css(`border`, `none`);
     $(`.timetable__current-option`)
         .find(`span`, `${index}`)
@@ -106,17 +106,16 @@ $(document).ready(function () {
     const row = $(evt.target).data(`row`);
     const value = $(evt.target).data(`value`);
     const index = $(evt.target).data(`index`);
-    $(`.timetable__workout-wrap`)
     $(`.timetable__workout-item-wrap`)
-      .find(`.timetable__workout-list-wrap`)
-      .find(`ul>li:nth-child(${column})`)
-      .css(`background-color`, ``).css(`color`, ``).css(`border`, ``);
-    $(`.timetable__workout-item-wrap`)
-      .find(`ul>li:nth-child(${row})`)
-      .css(`background-color`, ``).css(`color`, ``).css(`border`, ``);
+        .find(`.timetable__workout-list-wrap`)
+        .find(`ul>li:eq(` + (column - 1) + `)`)
+        .css(`background-color`, ``).css(`color`, ``).css(`border`, ``);
+    $(`.timetable__workout-time-wrap`)
+        .find(`li:eq(` + (row - 1) + `)`)
+        .css(`background-color`, ``).css(`color`, ``).css(`border`, ``);
     $(`.timetable__select-custom`)
         .find(`.timetable__custom-option`)
-        .find(`li:nth-child(${value})`)
+        .find(`li ${value}`)
         .css(`background-color`, ``).css(`color`, ``).css(`border`, ``);
     $(`.timetable__current-option`)
         .find(`span`, `${index}`)
